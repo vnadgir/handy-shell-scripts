@@ -88,5 +88,5 @@ while test $# -gt 0; do
         esac
 done
 
-wget -o $package.$date_format.log --user $USERNAME --password $PASSWORD $FTP_LOCATION* $OUTPUT
+wget -o $package.$date_format.log --user $USERNAME --password $PASSWORD $FTP_LOCATION $OUTPUT
 exit 0;
