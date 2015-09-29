@@ -90,7 +90,7 @@ done
 
 mkdir -p $OUTPUT
 
-wget -o $package.$date_format.log --user $USERNAME --password $PASSWORD $FTP_LOCATION $OUTPUT
+wget --mirror -o $package.$date_format.log --user $USERNAME --password $PASSWORD $FTP_LOCATION $OUTPUT
 cd  $OUTPUT
 gunzip *
 exit 0;
